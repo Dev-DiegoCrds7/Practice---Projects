@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* Coloquei a cor vermelha no fundo do meu site */
+body{
+    background-color: #b30000;
+}
+
+/* Aqui, alterei o estilo, escolhi o tipo da fonte, o peso e a centralização do texto do título */
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Aqui, utilizei o display inline-block para fazer com que a imagem, caso houvesse mais de uma, ficasse
+uma do lado da outra, como a palavra já sugere, colocando uma largura de 40% para a imagem, assim, estou dizendo que,
+independente do tamanho da tela, o tamanho da imagem sempre será a mesma. adicionei uma borda na imagem, cor na borda e
+o margin-left para centralizar a imagem, aumentando o espaçamento externo em 25% para a esquerda. */
+#atividade img{
+    display: inline-block;
+    width: 40%;
+    border-style: outset;
+    border-color: #000000;
+    margin-left: 25%;
+}
+
+/* Aqui, utilizei os mesmos contéudos em várias situações, então, fiz um agrupamento das mesmas, para reduzir a
+quantidade de linhas desnecessárias no código. */
+.textoJujutsu, #link a, h1{
+    background-color: #ffffff;
+    border-style: outset;
+    border-color: #000000;
+    color: #000000;
+}
+
+/* Nesse caso,foi definido o mesmo espaçamento externo para levar essa âncora ao centro do site, fazendo-o ficar abaixo
+da imagem, alem de usar o text-decoration:none paa tirar o traçejado que ficava abaixo do text e, um espaçamento interno
+no que podemos chamar de botão, no caso nossa âncora. */
+#link a{
+    margin-left: 25%;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Utilizado para dar um efeito diferenciado ao passar o mouse na nossa âncora, diferenciando
+o mesmo dos outros elementos. */
+#link a:hover{
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #ffffff;
+}
+
+/* Na linha 56, esse elemento é utilizado para mostrar a cor inicial da nossa âncora, local onde hospedamos nosso
+link para direcioná-los à página de onde retirei as informações inseridas no meu site. */
+#link a:link{
+    color: #000000;
+}
+
+/* Na linha 62, mostra a cor que fica a fonte desta âncora após clicarmos na mesma para irmos atrás da fonte, assim, facilitando
+com que saibamos se já clicamos naquele link ou não. */
+#link a:visited{
+    color: #b30000;
+}
+
+/* Aqui, defini o tipo, tamanho e espaçamento interno na "caixa" onde se encontra o texto do meu site. */
+.textoJujutsu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    padding: 15px;
+}
+
+/* Na linha 74, realizei alterações na primeira letra do meu texto, utilizando um pseudoelemento. Nele, alterei
+o tamanho, tipo e cor dessa letra. */
+.textoJujutsu::first-letter{
+    font-size: 200%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #b30000;
+}
+
+/* Muito obrigado vocês que visualizaram e leram cada passo do meu código. Por mais que o mesmo esteja simples,
+isso deu ao fato da minha procrastinação. Desde já peço desculpas pela falta de conteúdo e, novamente, agradecê-los
+pela visualização, leitura e atenção para comigo e meu humilde código. Um forte abraço! :D */
+
